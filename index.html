@@ -14,14 +14,14 @@
         outline: black;
         text-shadow:
         /* top-left shadow */
-        -2px -2px 0 #000,  
+        -2px -2px 0 #000, 
         /* top-right shadow */
         2px -2px 0 #000,
         /* bottom-left shadow */
         -2px 2px 0 #000,
         /* bottom-right shadow */
         2px 2px 0 #000;
-       
+        
     }
 
     /* This creates the scrolling animation */
@@ -37,16 +37,36 @@
  }
 
  body {
-   /* This is your background image */
-   background-image: url("img/background.jpg");
+    /* This is your background image */
+    background-image: url("img/background.jpg");
   
-   /* This tells it to repeat, which you already have */
-   background-repeat: repeat;
-   background-size: cover;
+    /* This tells it to repeat, which you already have */
+    background-repeat: repeat;
+    background-size: cover;
   
-   /* This applies the infinite animation! */
-   /* You can change '30s' to make it faster or slower */
-   animation: infinite-scroll 30s linear infinite;
+    /* This applies the infinite animation! */
+    /* You can change '30s' to make it faster or slower */
+    animation: infinite-scroll 30s linear infinite;
+ }
+
+
+ .card{
+    
+    width: 500px;
+    height:200px;
+    background-color:tan ;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    /* Centering the card: removes margin-left: 335px; and uses auto margins */
+    margin: 0 auto; 
+ }
+ #input{
+    border-radius: 5px;
+    border: none;
+    width: 150px;
+    height:50px;
+    text-align: center;
  }
 </style>
 
@@ -56,6 +76,21 @@
     <div class="content">
         <div class="title">
             <h1 class="cjgt">Christmas Joke Generator!</h1>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="card">
+            <br>
+            <br>
+            <h3 class="c_html">Put your input here</h3>
+            <br>
+            <input type="text" name="prom_input" id="input", placeholder="put vibe here...">
+            <br>
+            <br>
+            <button type="submit", id="submit_button">Submit</button>
         </div>
     </div>
 </body>
