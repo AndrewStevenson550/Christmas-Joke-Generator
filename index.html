@@ -5,7 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christmas Joke Generator</title>
 </head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Almendra+SC&family=Anton&family=Comic+Relief:wght@400;700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik+Bubbles&family=Story+Script&display=swap');
+    .cjgt{
+        text-align: center;
+        font-family: 'Rubik Bubbles';
+        color:lightgrey;
+        outline: black;
+        text-shadow:
+        /* top-left shadow */
+        -2px -2px 0 #000,  
+        /* top-right shadow */
+        2px -2px 0 #000,
+        /* bottom-left shadow */
+        -2px 2px 0 #000,
+        /* bottom-right shadow */
+        2px 2px 0 #000;
+       
+    }
+
+    /* This creates the scrolling animation */
+    @keyframes infinite-scroll {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+        /* This scrolls the background diagonally. 
+        You can change 500px to be bigger or smaller! */
+        background-position: -500px -500px;
+    }
+ }
+
+ body {
+   /* This is your background image */
+   background-image: url("img/background.jpg");
+  
+   /* This tells it to repeat, which you already have */
+   background-repeat: repeat;
+   background-size: cover;
+  
+   /* This applies the infinite animation! */
+   /* You can change '30s' to make it faster or slower */
+   animation: infinite-scroll 30s linear infinite;
+ }
+</style>
+
+
+
 <body>
-    
+    <div class="content">
+        <div class="title">
+            <h1 class="cjgt">Christmas Joke Generator!</h1>
+        </div>
+    </div>
 </body>
 </html>
